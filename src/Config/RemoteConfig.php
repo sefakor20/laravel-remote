@@ -2,8 +2,6 @@
 
 namespace RCodes\Remote\Config;
 
-use RCodes\Remote\Config\HostConfig;
-
 class RemoteConfig
 {
     public static function getHost($hostName): HostConfig
@@ -12,6 +10,7 @@ class RemoteConfig
         $configValues = config("remote.hosts.{$hostName}");
 
         // ray($configValues, $hostName);
+
         return new HostConfig(
             $configValues['host'],
             $configValues['port'],
