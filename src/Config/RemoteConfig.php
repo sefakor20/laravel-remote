@@ -11,7 +11,7 @@ class RemoteConfig
         // Get config values from config file
         $configValues = config("remote.hosts.{$hostName}");
 
-        ray($configValues, $hostName);
+        // ray($configValues, $hostName);
         return new HostConfig(
             $configValues['host'],
             $configValues['port'],

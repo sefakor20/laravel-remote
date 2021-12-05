@@ -9,7 +9,7 @@ use RCodes\Remote\Config\RemoteConfig;
 
 class RemoteCommand extends Command
 {
-    public $signature = 'remote {rawCommand} {--host=default}';
+    public $signature = 'remote {rawCommand} {--host=default} {--artisan}';
 
     public $description = 'Execute commands on a remote server';
 
@@ -30,9 +30,15 @@ class RemoteCommand extends Command
     // command to execute
     protected function getCommandToExecute(HostConfig $hostConfig): array
     {
+        $command = $this->argument('rawCommand');
+
+        if ($this->option('artisan')) {
+            $command = "php artisan '{$command}'";
+        }
+
         return [
             "cd {$hostConfig->path}",
-            $this->argument('rawCommand')
+            $command
         ];
     }
 }
