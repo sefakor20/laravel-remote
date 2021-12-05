@@ -2,9 +2,9 @@
 
 namespace RCodes\Remote;
 
+use RCodes\Remote\Commands\RemoteCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use RCodes\Remote\Commands\RemoteCommand;
 
 class RemoteServiceProvider extends PackageServiceProvider
 {
