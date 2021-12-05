@@ -37,7 +37,7 @@ class RemoteCommand extends Command
 
         return [
             "cd {$hostConfig->path}",
-            $command
+            $command,
         ];
     }
 }
