@@ -37,11 +37,7 @@ class RemoteCommand extends Command
 
         return [
             "cd {$hostConfig->path}",
-<<<<<<< HEAD
             $command
-=======
-            $this->argument('rawCommand'),
->>>>>>> d85735331c1adb5fac915494b2a959555c0ff481
         ];
     }
 }
