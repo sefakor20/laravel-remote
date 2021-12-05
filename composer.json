@@ -17,8 +17,9 @@
     ],
     "require": {
         "php": "^8.0",
+        "illuminate/contracts": "^8.73",
         "spatie/laravel-package-tools": "^1.9.2",
-        "illuminate/contracts": "^8.73"
+        "spatie/ssh": "^1.7"
     },
     "require-dev": {
         "nunomaduro/collision": "^5.10",
@@ -30,7 +31,8 @@
         "phpstan/phpstan-deprecation-rules": "^1.0",
         "phpstan/phpstan-phpunit": "^1.0",
         "phpunit/phpunit": "^9.5",
-        "spatie/laravel-ray": "^1.26"
+        "spatie/laravel-ray": "^1.26",
+        "spatie/ray": "^1.32"
     },
     "autoload": {
         "psr-4": {
@@ -55,10 +57,7 @@
         "laravel": {
             "providers": [
                 "RCodes\\Remote\\RemoteServiceProvider"
-            ],
-            "aliases": {
-                "Remote": "RCodes\\Remote\\Facades\\Remote"
-            }
+            ]
         }
     },
     "minimum-stability": "dev",
