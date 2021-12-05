@@ -2,10 +2,10 @@
 
 namespace RCodes\Remote\Commands;
 
-use Spatie\Ssh\Ssh;
 use Illuminate\Console\Command;
 use RCodes\Remote\Config\HostConfig;
 use RCodes\Remote\Config\RemoteConfig;
+use Spatie\Ssh\Ssh;
 
 class RemoteCommand extends Command
 {
@@ -19,20 +19,19 @@ class RemoteCommand extends Command
         $hostConfig = RemoteConfig::getHost($this->option('host'));
 
         $process = Ssh::create($hostConfig->user, $hostConfig->host)
-                ->onOutput(function($type, $line) {
+                ->onOutput(function ($type, $line) {
                     echo $line;
                 })
                 ->usePort($hostConfig->port)
                 ->execute($this->getCommandToExecute($hostConfig));
     }
 
-
     // command to execute
     protected function getCommandToExecute(HostConfig $hostConfig): array
     {
         return [
             "cd {$hostConfig->path}",
-            $this->argument('rawCommand')
+            $this->argument('rawCommand'),
         ];
     }
 }
