@@ -1,8 +1,8 @@
 # Execute Artisan commands on remote servers
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/rcodes/laravel-remote.svg?style=flat-square)](https://packagist.org/packages/rcodes/laravel-remote)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/rcodes/laravel-remote/run-tests?label=tests)](https://github.com/rcodes/laravel-remote/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/rcodes/laravel-remote/Check%20&%20fix%20styling?label=code%20style)](https://github.com/rcodes/laravel-remote/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/sefakor20/laravel-remote/run-tests?label=tests)](https://github.com/sefakor20/laravel-remote/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/sefakor20/laravel-remote/Check%20&%20fix%20styling?label=code%20style)](https://github.com/sefakor20/laravel-remote/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/rcodes/laravel-remote.svg?style=flat-square)](https://packagist.org/packages/rcodes/laravel-remote)
 
 ---
